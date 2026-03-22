@@ -1,0 +1,18 @@
+@import "../styles.rasi"
+
+inputbar {
+  children: ["prompt", "entry"];
+}
+
+textbox-prompt-colon {
+  enabled: false;
+}
+
+prompt {
+  enabled: true;
+}
+
+element-icon {
+    enabled: false;
+}
+

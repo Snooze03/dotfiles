@@ -1,0 +1,102 @@
+ @import "./colors/everforest.rasi"
+
+* { 
+    font: "JetBrainsMono Nerd Font 12";
+    background-color: transparent;
+}
+
+/* Main Window */
+window {
+    enabled: true;
+    location: center;
+    anchor: center;
+    fullscreen: false;
+    margin: 0px;
+    width: 430px;
+    border: 4px;
+    border-radius: 15px;
+    border-color: @border-color;
+    background-color: @background;
+}
+
+mainbox {
+    enabled: true;
+    padding: 5px;
+    /*background-color: @border-color;*/
+    background-color: @background;
+    children: ["inputbar", "listview"];
+}
+
+/* Search Box Input Section */
+inputbar {
+    enabled: true;
+    margin: 8px 13px;
+    padding: 10px 15px;
+    border: 2px;
+    border-radius: 15px;
+    border-color: @foreground;
+    children: ["textbox-prompt-colon", "entry"];
+}
+
+/* Global text prompt */
+textbox-prompt-colon {
+  enabled: true;
+  expand: false;
+  str: "󰣆 Drun:";
+  text-color: @foreground;
+  background-color: inherit;
+}
+
+/* Flag text prompt */
+prompt {
+  enabled: false;
+  color: @foreground;
+}
+
+entry {
+    placeholder-color:   @foreground;
+    text-color:          @foreground;
+    vertical-align:      0.5;
+}
+
+/* Inner box containing search results */
+listview {
+    enabled: true;
+    margin:              8px 13px;
+    border:              0px;
+    fixed-height:        false;
+    lines:               8; 
+    spacing:             5px;
+}
+
+/* Individual entries */
+element {
+    padding:             8px;
+    border-radius:       15px;
+    cursor:              pointer;
+    orientation:         horizontal;
+    children:            ["element-icon", "element-text"];
+}
+
+element-icon {
+    enabled: true;
+    size:                32px;
+    margin:              0 10px 0 0;
+    background-color: inherit;
+}
+
+element-text {
+    text-color:          @foreground;
+    vertical-align:      0.5;
+}
+
+/* Selected state */
+element selected {
+    background-color:    @selected;
+}
+
+element-text selected {
+    text-color:    @on-primary;
+    background-color:    @selected;
+}
+

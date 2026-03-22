@@ -1,0 +1,17 @@
+/* everforest-dark with transparency */
+* {
+    background:           #2D353BFF; 
+    background-alt:       #2D353BFF;
+    foreground:           #D3C6AAFF;
+    selected:             #A7C080FF;
+    active:               #83C092FF;
+    urgent:               #E67E80FF;
+    
+    /* UI Elements */
+    handle-color:         #A7C080FF;
+    border-color:         #232A2E80;
+    
+    /* Text colors */
+    on-primary:           #232A2EFF;
+    on-surface:           #859289FF;
+}

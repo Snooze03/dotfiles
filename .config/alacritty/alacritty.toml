@@ -1,0 +1,15 @@
+[general]
+import = [
+  # "./themes/one-dark.toml",
+    "./font.toml",
+    "~/.config/alacritty/themes/noctalia.toml",
+]
+[window]
+padding = { x = 20, y = 20 }
+decorations = "None"
+opacity = 0.75
+blur = false
+
+[cursor]
+# style = { shape = "Bar", blinking = "Always" } 
+blink_interval = 550
