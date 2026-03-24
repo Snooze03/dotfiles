@@ -1,10 +1,4 @@
 return {
-  -- Add the onedarkpro plugin
-  {
-    "olimorris/onedarkpro.nvim",
-    enabled = false,
-    priority = 1000, -- Ensure it loads first
-  },
   {
     "neanias/everforest-nvim",
     priority = 1000,
