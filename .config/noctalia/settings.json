@@ -32,6 +32,7 @@
         ],
         "preferredPlayer": "",
         "spectrumFrameRate": 30,
+        "spectrumMirrored": true,
         "visualizerType": "linear",
         "volumeFeedback": false,
         "volumeFeedbackSoundFile": "",
@@ -49,7 +50,6 @@
         "density": "comfortable",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
-        "floating": false,
         "fontScale": 1.05,
         "frameRadius": 12,
         "frameThickness": 8,
@@ -202,6 +202,7 @@
         "monitorForColors": "HDMI-A-1",
         "predefinedScheme": "Everforest",
         "schedulingMode": "off",
+        "syncGsettings": true,
         "useWallpaperColors": false
     },
     "controlCenter": {
@@ -354,13 +355,14 @@
         "reverseScroll": false,
         "scaleRatio": 0.9500000000000001,
         "screenRadiusRatio": 1,
-        "shadowDirection": "bottom_right",
-        "shadowOffsetX": 2,
+        "shadowDirection": "bottom",
+        "shadowOffsetX": 0,
         "shadowOffsetY": 3,
         "showChangelogOnStartup": true,
         "showHibernateOnLockScreen": false,
         "showScreenCorners": false,
         "showSessionButtonsOnLockScreen": false,
+        "smoothScrollEnabled": true,
         "telemetryEnabled": false
     },
     "hooks": {
@@ -391,6 +393,7 @@
     },
     "location": {
         "analogClockInCalendar": false,
+        "autoLocate": false,
         "firstDayOfWeek": -1,
         "hideWeatherCityName": false,
         "hideWeatherTimezone": false,
@@ -401,10 +404,10 @@
         "use12hourFormat": true,
         "useFahrenheit": false,
         "weatherEnabled": true,
-        "weatherShowEffects": false
+        "weatherShowEffects": false,
+        "weatherTaliaMascotAlways": false
     },
     "network": {
-        "airplaneModeEnabled": false,
         "bluetoothAutoConnect": true,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
@@ -412,8 +415,7 @@
         "bluetoothRssiPollingEnabled": false,
         "disableDiscoverability": false,
         "networkPanelView": "wifi",
-        "wifiDetailsViewMode": "grid",
-        "wifiEnabled": true
+        "wifiDetailsViewMode": "grid"
     },
     "nightLight": {
         "autoSchedule": true,
@@ -610,11 +612,12 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/snooze/Pictures/Wallpapers/everforest",
+        "directory": "/home/snooze/Pictures/Wallpapers/",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
             {
+                "appearance": "dark",
                 "colorScheme": "Everforest",
                 "darkMode": true,
                 "generationMethod": "rainbow",
@@ -670,14 +673,15 @@
         "fillColor": "#232a2e",
         "fillMode": "crop",
         "hideWallpaperFilenames": true,
+        "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
             {
-                "directory": "/home/snooze/Pictures/Wallpapers/everforest",
+                "directory": "/home/snooze/Pictures/Wallpapers/",
                 "name": "HDMI-A-1",
                 "wallpaper": ""
             },
             {
-                "directory": "/home/snooze/Pictures/Wallpapers/everforest",
+                "directory": "/home/snooze/Pictures/Wallpapers/",
                 "name": "eDP-1",
                 "wallpaper": ""
             }
@@ -697,6 +701,7 @@
         "transitionType": [
             "disc"
         ],
+        "useOriginalImages": false,
         "useSolidColor": false,
         "useWallhaven": false,
         "viewMode": "recursive",
@@ -704,7 +709,7 @@
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "anime",
+        "wallhavenQuery": "manga",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
