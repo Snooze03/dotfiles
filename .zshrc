@@ -115,7 +115,7 @@ alias lsta="ls -a --long --tree --level=2"
 # Zoxide
 alias cd="z"
 
-alias update="sudo pacman -Syu"
+alias update="sudo pacman -Syu && paru -Syu"
 alias code="vscodium"
 
 # pnpm
