@@ -3,7 +3,7 @@
 INT="eDP-1"
 EXT="HDMI-A-1"
 INT_SCALE="1.2"
-EXT_DISPLAY_SETTINGS="1920x1080@74"
+EXT_DISPLAY_SETTINGS="1920x1080@75"
 
 options="󰌢 Internal Only"
 if hyprctl monitors all | grep -q "$EXT"; then
