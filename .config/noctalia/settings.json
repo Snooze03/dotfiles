@@ -304,7 +304,7 @@
         "allowPanelsOnScreenWithoutBar": true,
         "allowPasswordWithFprintd": false,
         "animationDisabled": false,
-        "animationSpeed": 1.2,
+        "animationSpeed": 1,
         "autoStartAuth": false,
         "avatarImage": "/home/snooze/Pictures/7464e257990705a1f42d26f81e47e5b5-2284478819.jpg",
         "boxRadiusRatio": 1,
@@ -592,6 +592,10 @@
             {
                 "enabled": true,
                 "id": "btop"
+            },
+            {
+                "enabled": true,
+                "id": "foot"
             }
         ],
         "enableUserTheming": false
@@ -631,6 +635,7 @@
                 "useWallpaperColors": false
             },
             {
+                "appearance": "dark",
                 "colorScheme": "Everforest",
                 "darkMode": true,
                 "generationMethod": "rainbow",
@@ -644,6 +649,7 @@
                 "useWallpaperColors": false
             },
             {
+                "appearance": "dark",
                 "colorScheme": "Everforest",
                 "darkMode": true,
                 "generationMethod": "rainbow",
@@ -657,6 +663,7 @@
                 "useWallpaperColors": false
             },
             {
+                "appearance": "dark",
                 "colorScheme": "Everforest",
                 "darkMode": true,
                 "generationMethod": "rainbow",
