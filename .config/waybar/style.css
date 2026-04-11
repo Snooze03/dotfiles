@@ -1,0 +1,30 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 14px;
+  padding: 1.5px 10px;
+}
+
+window#waybar {
+  background-color: rgba(40, 44, 52, 0.7);
+  color: #abb2bf;
+}
+
+#custom-archicon {
+  font-size: 18px;
+}
+
+#workspaces button {
+  padding: 1px;
+  color: #ffffff;
+}
+
+#workspaces button.active {
+  background: #1e2127;
+}
+
+#clock {
+  font-weight: bold;
+}
+
+#pulseaudio {
+}
