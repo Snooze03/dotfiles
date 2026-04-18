@@ -33,7 +33,7 @@
         "preferredPlayer": "",
         "spectrumFrameRate": 30,
         "spectrumMirrored": true,
-        "visualizerType": "linear",
+        "visualizerType": "mirrored",
         "volumeFeedback": false,
         "volumeFeedbackSoundFile": "",
         "volumeOverdrive": false,
@@ -92,6 +92,7 @@
                 {
                     "colorizeDistroLogo": false,
                     "colorizeSystemIcon": "tertiary",
+                    "colorizeSystemText": "none",
                     "customIconPath": "",
                     "enableColorization": true,
                     "icon": "noctalia",
@@ -142,7 +143,7 @@
                 },
                 {
                     "deviceNativePath": "__default__",
-                    "displayMode": "graphic-clean",
+                    "displayMode": "graphic",
                     "hideIfIdle": false,
                     "hideIfNotDetected": true,
                     "id": "Battery",
@@ -262,8 +263,13 @@
     "desktopWidgets": {
         "enabled": false,
         "gridSnap": false,
-        "gridSnapScale": false,
+        "gridSnapScale": true,
         "monitorWidgets": [
+            {
+                "name": "HDMI-A-1",
+                "widgets": [
+                ]
+            }
         ],
         "overviewEnabled": true
     },
