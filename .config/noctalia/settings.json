@@ -119,6 +119,33 @@
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": false,
                     "unfocusedIconsOpacity": 1
+                },
+                {
+                    "defaultSettings": {
+                        "autoStartBreaks": false,
+                        "autoStartWork": false,
+                        "longBreakDuration": 15,
+                        "sessionsBeforeLongBreak": 4,
+                        "shortBreakDuration": 5,
+                        "workDuration": 25
+                    },
+                    "id": "plugin:pomodoro"
+                },
+                {
+                    "compactMode": true,
+                    "hideMode": "hidden",
+                    "hideWhenIdle": false,
+                    "id": "MediaMini",
+                    "maxWidth": 120,
+                    "panelShowAlbumArt": true,
+                    "scrollingMode": "always",
+                    "showAlbumArt": true,
+                    "showArtistFirst": true,
+                    "showProgressRing": true,
+                    "showVisualizer": true,
+                    "textColor": "primary",
+                    "useFixedWidth": false,
+                    "visualizerType": "linear"
                 }
             ],
             "right": [
@@ -160,6 +187,9 @@
                     "id": "Tray",
                     "pinned": [
                     ]
+                },
+                {
+                    "id": "plugin:usb-drive-manager"
                 },
                 {
                     "hideWhenZero": false,
@@ -680,6 +710,48 @@
                     "#e67e80"
                 ],
                 "path": "/home/snooze/Pictures/Wallpapers/everforest/japanese_pedestrian_street.png",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Everforest",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#a7c080",
+                    "#d3c6aa",
+                    "#9da9a0",
+                    "#e67e80"
+                ],
+                "path": "/home/snooze/Pictures/Wallpapers/anime/wallhaven-yqg6r7.jpg",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Everforest",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#a7c080",
+                    "#d3c6aa",
+                    "#9da9a0",
+                    "#e67e80"
+                ],
+                "path": "/home/snooze/Pictures/Wallpapers/anime/wallhaven-6ljeyx.jpg",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Everforest",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#a7c080",
+                    "#d3c6aa",
+                    "#9da9a0",
+                    "#e67e80"
+                ],
+                "path": "/home/snooze/Pictures/Wallpapers/anime/wallhaven-1qx1y3.jpg",
                 "useWallpaperColors": false
             }
         ],
