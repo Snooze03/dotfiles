@@ -1,0 +1,12 @@
+{
+  "workspace": {
+    "library": [
+      "/home/snooze/.config/hypr"
+    ]
+  },
+  "diagnostics": {
+    "globals": [
+      "hl"
+    ]
+  }
+}

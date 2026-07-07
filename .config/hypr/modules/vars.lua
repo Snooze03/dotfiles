@@ -1,0 +1,7 @@
+return {
+	programs = {
+		terminal = "foot",
+		fileManager = "thunar",
+		menu = "rofi -show drun",
+	},
+}
