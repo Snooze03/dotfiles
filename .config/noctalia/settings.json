@@ -121,17 +121,6 @@
                     "unfocusedIconsOpacity": 1
                 },
                 {
-                    "defaultSettings": {
-                        "autoStartBreaks": false,
-                        "autoStartWork": false,
-                        "longBreakDuration": 15,
-                        "sessionsBeforeLongBreak": 4,
-                        "shortBreakDuration": 5,
-                        "workDuration": 25
-                    },
-                    "id": "plugin:pomodoro"
-                },
-                {
                     "compactMode": true,
                     "hideMode": "hidden",
                     "hideWhenIdle": false,
@@ -189,10 +178,19 @@
                     ]
                 },
                 {
+                    "defaultSettings": {
+                        "autoMount": false,
+                        "fileBrowser": "yazi",
+                        "hideWhenEmpty": false,
+                        "iconColor": "none",
+                        "showBadge": false,
+                        "showNotifications": true,
+                        "terminalCommand": "kitty"
+                    },
                     "id": "plugin:usb-drive-manager"
                 },
                 {
-                    "hideWhenZero": false,
+                    "hideWhenZero": true,
                     "hideWhenZeroUnread": false,
                     "iconColor": "primary",
                     "id": "NotificationHistory",
@@ -619,10 +617,6 @@
             },
             {
                 "enabled": true,
-                "id": "hyprland"
-            },
-            {
-                "enabled": true,
                 "id": "yazi"
             },
             {
@@ -632,6 +626,10 @@
             {
                 "enabled": true,
                 "id": "foot"
+            },
+            {
+                "enabled": true,
+                "id": "hyprland"
             }
         ],
         "enableUserTheming": false
