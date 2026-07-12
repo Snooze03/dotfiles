@@ -1,24 +1,6 @@
--- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
--- "Smart gaps" / "No gaps when only"
--- uncomment all if you wish to use that.
--- hl.workspace_rule({ workspace = "w[tv1]", gaps_out = 0, gaps_in = 0 })
--- hl.workspace_rule({ workspace = "f[1]",   gaps_out = 0, gaps_in = 0 })
--- hl.window_rule({
---     name  = "no-gaps-wtv1",
---     match = { float = false, workspace = "w[tv1]" },
---     border_size = 0,
---     rounding    = 0,
--- })
--- hl.window_rule({
---     name  = "no-gaps-f1",
---     match = { float = false, workspace = "f[1]" },
---     border_size = 0,
---     rounding    = 0,
--- })
-
 hl.config({
 	dwindle = {
-		preserve_split = true, -- You probably want this
+		preserve_split = true,
 	},
 })
 
@@ -43,14 +25,48 @@ hl.config({
 		disable_hyprland_logo = true,
 	},
 	xwayland = {
-		force_zero_scaling = true,
-		-- Fixes the stretching on x11 apps
+		force_zero_scaling = true, -- Fixes the stretching on x11 apps
 	},
 })
 
---------------------------------
----- WINDOWS AND WORKSPACES ----
---------------------------------
+------------------------------------
+---- WORKSPACE AND WINDOW RULES ----
+------------------------------------
+local vars = require("modules.vars")
+
+-- Workspaces 1-6 on External
+for ws = 1, 6 do
+	hl.workspace_rule({
+		workspace = tostring(ws),
+		monitor = vars.monitors.external,
+		default = true,
+	})
+end
+
+-- Workspaces 7-10 on Internal
+for ws = 7, 10 do
+	hl.workspace_rule({
+		workspace = tostring(ws),
+		monitor = vars.monitors.internal,
+		default = true,
+	})
+end
+
+-- Workspace specific programs
+local programmatic_workspaces = {
+	["zen"] = "1",
+	["obsidian"] = "2",
+	["jetbrains-idea"] = "3",
+	["codium"] = "3",
+}
+
+for program, workspace in pairs(programmatic_workspaces) do
+	hl.window_rule({
+		match = { class = program },
+		workspace = workspace,
+	})
+end
+
 -- Ignore maximize requests from all apps. You'll probably like this.
 hl.window_rule({
 	name = "suppress-maximize-events",
@@ -74,14 +90,6 @@ hl.window_rule({
 	no_focus = true,
 })
 
--- Layer rules also return a handle.
--- local overlayLayerRule = hl.layer_rule({
---     name  = "no-anim-overlay",
---     match = { namespace = "^my-overlay$" },
---     no_anim = true,
--- })
--- overlayLayerRule:set_enabled(false)
-
 -- Hyprland-run windowrule
 hl.window_rule({
 	name = "move-hyprland-run",
@@ -89,4 +97,24 @@ hl.window_rule({
 
 	move = "20 monitor_h-120",
 	float = true,
+})
+
+-- Center OnlyOffice editor popups
+hl.window_rule({
+	name = "center-popups",
+	match = { class = "DesktopEditors" },
+
+	float = true,
+	center = true,
+})
+
+-- Center and float Blanket
+hl.window_rule({
+	name = "center-blanket",
+	match = { class = "com.rafaelmardojai.Blanket" },
+
+	float = true,
+	center = true,
+	size = { "(window_w*1.5)", "(window_h*0.9)" },
+	workspace = "10",
 })
