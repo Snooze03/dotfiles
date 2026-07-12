@@ -51,6 +51,9 @@ hl.monitor({
 	position = "auto-right",
 	scale = "1",
 })
+-- Handle lid closing
+-- If connected to external monitor, turn off internal display
+-- else sleep the laptop
 
 -------------------
 ---- AUTOSTART ----
@@ -71,3 +74,4 @@ require("modules.binds")
 require("modules.permissions")
 require("modules.decorations")
 require("modules.windowRules")
+require("modules.misc")
