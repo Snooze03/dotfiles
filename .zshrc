@@ -135,3 +135,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # ZOXIDE
 eval "$(zoxide init zsh)"
+
+. "$HOME/.local/bin/env"
