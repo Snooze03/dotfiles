@@ -36,15 +36,17 @@ hl.env("HYPRCURSOR_SIZE", "24")
 ------------------
 ---- MONITORS ----
 ------------------
+local vars = require("modules.vars")
+
 hl.monitor({
-	output = "eDP-1",
+	output = vars.monitors.internal,
 	mode = "preferred",
 	position = "0x0",
 	scale = "1.2",
 })
 
 hl.monitor({
-	output = "HDMI-A-1",
+	output = vars.monitors.external,
 	mode = "1920x1080@75",
 	position = "auto-right",
 	scale = "1",
@@ -65,9 +67,7 @@ end)
 ------- MODULES -------
 -----------------------
 require("modules.inputs")
-local binds = require("modules.binds")
+require("modules.binds")
 require("modules.permissions")
 require("modules.decorations")
 require("modules.windowRules")
-
-binds.setup()
