@@ -53,18 +53,6 @@ hl.config({
 	animations = {
 		enabled = true,
 	},
-
-	opengl = {
-		nvidia_anti_flicker = true,
-	},
-
-	misc = {
-		disable_hyprland_logo = 1,
-		disable_splash_rendering = 1,
-		vrr = 0,
-		animate_manual_resizes = 1,
-		middle_click_paste = 0,
-	},
 })
 
 -- Animations
